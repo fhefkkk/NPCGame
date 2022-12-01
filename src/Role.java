@@ -36,5 +36,35 @@ class A extends Role{
 			break;
 		}
 	}
-		
+}
+class B extends Role{
+	public B(int process) {
+		super(50+process*5,20+process*2,5+process);
+		// TODO Auto-generated constructor stub
+		switch(process) {
+		case 0:
+			this.name="1";
+			this.image=new ImageIcon("#");
+			break;
+		case 1:
+			this.name="2";
+			this.image=new ImageIcon("#");
+			break;
+		case 2:
+			this.name="3";
+			this.image=new ImageIcon("#");
+			break;
+		case 3:
+			this.name="4";
+			this.image=new ImageIcon("#");
+			break;
+		}
+	}
+}
+class DQL extends Role{
+	public DQL() {
+		super(250,1,-50);
+		this.name="DQL";
+		this.image=new ImageIcon("#");
+	}
 }
